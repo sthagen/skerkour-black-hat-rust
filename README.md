@@ -45,7 +45,7 @@ Instead, it's a from-theory-to-practice manual and you may enjoy it if any of th
 
 ## Early access
 
-As of today, the book is a work in progress. You can think of it as a Kickstarter campaign, but with 100% of the revenues going to the author.
+As of today, the book is a work in progress. It is available in the context of an Early Access program which means that the chapters will be sent to you as soon as they are written, and feedback is very much appreciated.
 
 estimated final publication: **July 2021**
 
