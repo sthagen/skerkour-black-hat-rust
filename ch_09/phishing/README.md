@@ -1,7 +1,16 @@
 # Phishing with WASM
 
+
+## Dev
+
 ```
-$ make init
-$ make webapp
+$ make webapp_debug
 $ make serve
+```
+
+
+## Build
+
+```
+$ make build
 ```
