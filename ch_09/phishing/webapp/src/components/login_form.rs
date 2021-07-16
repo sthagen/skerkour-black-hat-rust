@@ -57,7 +57,7 @@ impl Component for LoginForm {
                 self.api_task = None;
                 let window: Window = web_sys::window().expect("window not available");
                 let location = window.location();
-                let _ = location.set_href("https://bloom.sh/login");
+                let _ = location.set_href("https://academy.kerkour.com/black-hat-rust");
             }
             Msg::ApiResponse(Err(err)) => {
                 self.error = Some(err);
@@ -98,7 +98,7 @@ impl Component for LoginForm {
                             class="form-control form-control-lg"
                             type="email"
                             placeholder="Email"
-                            value=&self.email
+                            value=self.email.clone()
                             oninput=oninput_email
                             id="email-input"
                         />
@@ -108,7 +108,7 @@ impl Component for LoginForm {
                             class="form-control form-control-lg"
                             type="password"
                             placeholder="Password"
-                            value=&self.password
+                            value=self.password.clone()
                             oninput=oninput_password
                         />
                     </div>

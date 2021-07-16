@@ -10,6 +10,7 @@ build: agent client server
 agent:
 	cargo build -p agent --release
 
+
 .PHONY: client
 client:
 	cargo build -p client --release

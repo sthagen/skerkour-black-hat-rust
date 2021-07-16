@@ -1,5 +1,7 @@
-pub const TOKEN: &str = "token";
-pub const LIST: &str = "list";
+pub const AGENTS: &str = "agents";
+pub const EXEC: &str = "exec";
+pub const JOBS: &str = "jobs";
 
-pub mod list;
-pub mod token;
+pub mod agents;
+pub mod exec;
+pub mod jobs;

@@ -1,43 +1,44 @@
-use actix_web::{middleware, web, App, HttpServer};
 use std::sync::Arc;
 
 mod api;
 mod config;
 mod db;
+pub mod entities;
 mod error;
-mod state;
+mod repository;
+mod service;
 
 use config::Config;
 pub use error::Error;
-pub use state::ServerState;
+pub use repository::Repository;
+pub use service::Service;
 
-#[actix_web::main]
+#[tokio::main(flavor = "multi_thread")]
 async fn main() -> Result<(), anyhow::Error> {
-    ::std::env::set_var("RUST_LOG", "actix_server=info,actix_web=info");
+    std::env::set_var("RUST_LOG", "server=info");
     env_logger::init();
 
     let config = Config::load()?;
 
     let db_pool = db::connect(&config.database_url).await?;
-    let addr = format!("0.0.0.0:{}", config.port);
+    db::migrate(&db_pool).await?;
 
-    let app_state = Arc::new(ServerState::new(db_pool));
+    let service = Service::new(db_pool);
+    let app_state = Arc::new(api::AppState::new(service));
 
-    HttpServer::new(move || {
-        App::new()
-            .data(Arc::clone(&app_state))
-            .wrap(middleware::Logger::default())
-            .service(
-                web::scope("/api")
-                    .service(web::resource("").route(web::to(api::routes::index)))
-                    .service(
-                        web::resource("/commands").route(web::post().to(api::routes::commands)),
-                    ),
-            )
-    })
-    .bind(&addr)?
-    .run()
-    .await?;
+    let routes = api::routes::routes(app_state);
+
+    log::info!("starting server on: 0.0.0.0:{}", config.port);
+
+    let (_addr, server) =
+        warp::serve(routes).bind_with_graceful_shutdown(([127, 0, 0, 1], config.port), async {
+            tokio::signal::ctrl_c()
+                .await
+                .expect("Failed to listen for CRTL+c");
+            log::info!("Shutting down server");
+        });
+
+    server.await;
 
     Ok(())
 }

@@ -1,12 +1,9 @@
-use anyhow::Result;
 use futures::{stream, StreamExt};
 use reqwest::Client;
 use std::{
     env,
-    sync::Arc,
     time::{Duration, Instant},
 };
-use tokio::sync::Mutex;
 
 mod error;
 pub use error::Error;
@@ -16,7 +13,7 @@ mod subdomains;
 use model::Subdomain;
 mod common_ports;
 
-fn main() -> Result<()> {
+fn main() -> Result<(), anyhow::Error> {
     let args: Vec<String> = env::args().collect();
 
     if args.len() != 2 {
@@ -40,24 +37,27 @@ fn main() -> Result<()> {
     let scan_result = runtime.block_on(async move {
         let subdomains = subdomains::enumerate(&http_client, target).await?;
 
-        // Concurrent stream method 1: Using an Arc<Mutex<T>>
-        let res: Arc<Mutex<Vec<Subdomain>>> = Arc::new(Mutex::new(Vec::new()));
-
-        stream::iter(subdomains.into_iter())
-            .for_each_concurrent(subdomains_concurrency, |subdomain| {
-                let res = res.clone();
-                async move {
-                    let subdomain = ports::scan_ports(ports_concurrency, subdomain).await;
-                    res.lock().await.push(subdomain)
-                }
-            })
+        // Concurrent stream method 1: Using buffer_unordered + collect
+        let subdomains: Vec<Subdomain> = stream::iter(subdomains.into_iter())
+            .map(|subdomain| ports::scan_ports(ports_concurrency, subdomain))
+            .buffer_unordered(subdomains_concurrency)
+            .collect()
             .await;
 
-        Ok::<_, crate::Error>(
-            Arc::try_unwrap(res)
-                .expect("Moving out from subdomains Arc")
-                .into_inner(),
-        )
+        // Concurrent stream method 2: Using an Arc<Mutex<T>>
+        // let res: Arc<Mutex<Vec<Subdomain>>> = Arc::new(Mutex::new(Vec::new()));
+
+        // stream::iter(subdomains.into_iter())
+        //     .for_each_concurrent(subdomains_concurrency, |subdomain| {
+        //         let res = res.clone();
+        //         async move {
+        //             let subdomain = ports::scan_ports(ports_concurrency, subdomain).await;
+        //             res.lock().await.push(subdomain)
+        //         }
+        //     })
+        //     .await;
+
+        Ok::<_, crate::Error>(subdomains)
     })?;
 
     let scan_duration = scan_start.elapsed();
