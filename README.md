@@ -1,11 +1,13 @@
 <p align="center">
   <a href="https://academy.kerkour.com/black-hat-rust?coupon=GITHUB" target="_blank" rel="noopener"><img alt="Black Hat Rust logo" src="./black_hat_rust_cover.png" height="300" /></a>
   <h1 align="center">Black Hat Rust - Early Access</h1>
-  <h3 align="center">Deep dive into offensive security with the Rust programming language</h3>
+  <h3 align="center">Applied offensive security with the Rust programming language</h3>
   <h3 align="center">
     <a href="https://academy.kerkour.com/black-hat-rust?coupon=GITHUB">Buy the book now!</a>
   </h3>
 </p>
+
+While the [Rust Book](https://doc.rust-lang.org/book/) does an excellent job teaching **What is** Rust, a book about **Why** and **How** to Rust was missing.
 
 
 ## Summary
@@ -18,8 +20,11 @@ We will put on our black hat and explore the world of offensive security, whethe
 Scanners, exploits, phishing toolkit, implants... From theory to practice, we will explore the arcane of offensive security and build our own offensive tools with the Rust programming language, Stack Overflow's most loved language for five years in a row.
 
 
-The security programming field is defined by its extremely large scope (from shellcodes to servers and web apps). Rust is the long-awaited one-size-fits-all programming language meeting all those requirements thanks to its unparalleled guarantees and feature set. Here is why.
+Which programming language allows to craft shellcodes, build servers, create phishing pages? Before Rust, none! Rust is the long-awaited one-size-fits-all programming language meeting all those requirements thanks to its unparalleled guarantees and feature set. Here is why.
+
 <!--
+The security programming field is defined by its extremely large scope (from shellcodes to servers and web apps). Rust is the long-awaited one-size-fits-all programming language meeting all those requirements thanks to its unparalleled guarantees and feature set. Here is why.
+
 
 Rust is turning a new page in the history of programming languages by providing unparalleled guarantees and features, whether it be for defensive or offensive security. I will venture to say that Rust is the long awaited one-size-fits-all programming language. Here is why. -->
 
@@ -32,16 +37,20 @@ This is NOT a 1000th tutorial about sqlmap and Metasploit, nor will it teach you
 Instead, it's a from-theory-to-practice guide and you may enjoy it if any of the following:
 
 - You keep screaming "show me the code!" when reading about cyber attacks and malwares
+- You are a developer and want to learn security
+- You are a security engineer and want to learn Rust programming
 - You want to learn real-world and idiomatic rust practices
 - You believe that the best defense is thinking like an attacker
 - You learn by building and love to look under the hood
+- You value simplicity and pragmatism
 - You develop your own tools and exploits with Python, Ruby, C, Java...
-- You love simplicity and pragmatism
-- You prefer getting things done over analysis paralysis
 - You want to learn real-world offensive security, not just pentesting
-- You want to start your career in bug bounties or offensive security
+- You want to start making money with bug bounty programs
+- You prefer getting things done over analysis paralysis
+
 
 But I repeat, this book is NOT a computer science book.
+
 
 <h3>
   <a href="https://academy.kerkour.com/black-hat-rust?coupon=GITHUB">Buy the book now!</a>
@@ -51,15 +60,13 @@ But I repeat, this book is NOT a computer science book.
 
 As of today, the book is a work in progress. It is available in the context of an Early Access program which means that the chapters will be sent to you as soon as they are written, and feedback is very much appreciated.
 
-pages available: **200+**
+pages available: **320+**
 
 code progress: **~90%**
 
-estimated beta release: **July 2021**
-
 estimated final publication: **Q3 2021**
 
-estimated number of pages: **~320**
+estimated number of pages: **~330+**
 
 
 **In order to thank all the people who will help me make this book a reality, all early access buyers will also receive the following bonus:**
@@ -86,7 +93,7 @@ Unfortunately, when a program spends most of its time in I/O operations, multi-t
 #### 4 - Adding modules with Trait objects (partially available, will be updated during the beta ✅🕒)
 We will add more heterogeneous modules to our scanner and will learn how Rust's type system helps create properly designed large software projects.
 
-#### 5 - Crawling the web for OSINT (August 2021 🕒)
+#### 5 - Crawling the web for OSINT (September 2021 🕒)
 Leveraging all we learned previously, we will build an extremely fast web crawler to help us find the needles in the haystack the web is.
 
 
@@ -95,7 +102,7 @@ Leveraging all we learned previously, we will build an extremely fast web crawle
 #### 6 - Finding vulnerabilities (partially available, will be updated during the beta ✅🕒)
 Once the external reconnaissance performed, it's time to find entry points. In this chapter we will learn how automated fuzzing can help us to find vulnerabilities that can be exploited to then gain access to our target's systems.
 
-#### 7 - Exploit development (August-September 2021 🕒)
+#### 7 - Exploit development (September 2021 🕒)
 Rust may not be as fast as python when it comes to iterating on quick scripts such as exploits, but as we will see, its powerful type and modules system make it nonetheless a weapon of choice.
 
 #### 8 - Writing shellcodes in Rust (partially available, will be updated during the beta ✅🕒)
@@ -118,7 +125,7 @@ The consequences of our own infrastructure being compromised or seized can be di
 #### 12 - Going multi-platforms (partially available, will be updated during the beta ✅🕒)
 Today's computing landscape is extremely fragmented. From Windows to macOS, we can't target only one Operating System to ensure the success of our operations. In this section we will see how Rust's ecosystem is extremely useful when it comes to cross-compilation.
 
-#### 13 - Turning into a worm to increase reach (August-September 2021 🕒)
+#### 13 - Turning into a worm to increase reach (September 2021 🕒)
 Once the initial targets compromised, we will capitalize on Rust's excellent reusability to incorporate some parts of our initial scanner to turn our RAT into a worm and reach more targets only accessible from the target's internal network.
 
 #### 14 Conclusion (partially available, will be updated during the beta ✅🕒)
@@ -129,11 +136,39 @@ Now it's **your** turn to get things done!
 </h3>
 
 
+## FAQ
+
+### Are there other means of payment available?
+
+Payments by cards are secured by [Stripe](https://stripe.com).
+
+Also, I need a unified list of purchases on [Stripe](https://stripe.com) for accounting reasons, at least during the early-access phase.
+
+Please join the discussion on [GitHub (Alternative means of payment (Bitcoin, PayPal...))](https://github.com/skerkour/black-hat-rust/issues/10) if payment by card is absolutely not an option for you, I will do my best to add more means of payments once the book is completed.
+
+
+### The book is too expensive!
+
+Black Hat Rust is designed to save you a lot of time in your learning journey of Rust and offensive security.
+The maths are simple: if the book saves you 20 hours, and you are paid 25$ / hour, you just saved 25 * 18 = 450$
+
+Of course, I expect that the book will save you even more time!
+
+
+### What to do if I don't have a VAT number?
+
+A European VAT number is optional, and you can skip the field or leave it empty if asked.
+
+
+
+
 ## Getting started
 
-Want to contribute to your first Rust security project or participate in your first bug bounty program?
+**Knowledge has no value if you don't practice!**
 
-I've got you covered! I've extracted the security scanner we build in the book from chapters 2, 3, 4, and 7 into [phaser](https://github.com/skerkour/phaser): an automated assets mapper and vulnerability scanner.
+Where to start? I've got you covered! I've extracted the security scanner we build in the book from chapters 2, 3, 4, and 7 into [phaser](https://github.com/skerkour/phaser): an automated attack surface mapper and vulnerability scanner.
+
+You can then contribute to your first Rust security project or participate in your first bug bounty program.
 
 
 ## Community

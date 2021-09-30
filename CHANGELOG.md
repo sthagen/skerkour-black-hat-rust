@@ -2,6 +2,115 @@
 
 All notable changes to the book will be documented in this file.
 
+## v2021.18 - Work in Progress
+
+### Changed
+
+* ch09: Persuasion
+
+
+
+## v2021.17 - 2021-09-03
+
+### Changed
+
+* ch01: how to avoid lifetime annotations
+* ch09: framing
+
+### Added
+
+* ch08: Shell shellcode
+* ch08: reverse_tcp shellcode
+
+
+## v2021.16 - 2021-08-30
+
+### Changed
+
+* lots of typos fixed
+* ch10: real-time communication schemas
+* ch10: code organization
+* ch11
+
+
+
+## v2021.15 - 2021-08-24
+
+### Added
+
+* Copyright notice
+
+### Changed
+
+* preface
+* ch06: Tools for bug hunting, fuzzing, vulnerabilities inducing patterns
+* ch01 typos
+* ch09
+* ch11: Overview of the Rust cryptography ecosystem
+* ch11: Threat model
+* ch11: prekey rotation
+
+
+## v2021.14 - 2021-08-03
+
+### Changed
+
+* ch06
+* ch04
+
+
+## v2021.13 - 2021-07-22
+
+### Changed
+
+* ch08: Added 2 illustrations
+* preface: a little bit of storytelling
+
+
+
+## v2021.12 - 2021-07-20
+
+### Changed
+
+* ch11: Added a lot of illustrations
+* ch06: filled a lot of holes
+
+
+## v2021.11 - 2021-07-19
+
+### Changed
+
+* ch06: Added some illustrations
+* ch06: filled some holes
+
+
+
+## v2021.10 - 2021-07-17
+
+### Changed
+
+* ch14: Execution illustration
+
+
+
+## v2021.9 - 2021-07-17
+
+### Changed
+
+* ch09: Evil twin attack
+
+
+## v2021.8 - 2021-07-16
+
+### Changed
+
+* ch09: Added various illustrations
+* ch09: brain regions
+* ch09: How to improve delivery rates
+* ch09: A few ideas for your phishing campaigns
+* ch09: phishing quizzes
+
+
 
 ## v2021.7 - 2021-07-15
 
