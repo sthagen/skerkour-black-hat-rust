@@ -31,7 +31,7 @@ pub struct Cve {
 
 impl CveDetailsSpider {
     pub fn new() -> Self {
-        let http_timeout = Duration::from_secs(5);
+        let http_timeout = Duration::from_secs(6);
         let http_client = Client::builder()
             .timeout(http_timeout)
             .build()
@@ -51,12 +51,12 @@ impl super::Spider for CveDetailsSpider {
 
     fn start_urls(&self) -> Vec<String> {
         vec![
-            "https://www.cvedetails.com/vulnerability-list/year-2021/vulnerabilities.html"
+            "https://www.cvedetails.com/vulnerability-list/vulnerabilities.html"
                 .to_string(),
         ]
     }
 
-    async fn run(&self, url: &str) -> Result<(Vec<Self::Item>, Vec<String>), Error> {
+    async fn scrape(&self, url: String) -> Result<(Vec<Self::Item>, Vec<String>), Error> {
         log::info!("visiting: {}", url);
 
         let http_res = self.http_client.get(url).send().await?.text().await?;

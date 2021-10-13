@@ -93,7 +93,7 @@ Unfortunately, when a program spends most of its time in I/O operations, multi-t
 #### 4 - Adding modules with Trait objects (partially available, will be updated during the beta ✅🕒)
 We will add more heterogeneous modules to our scanner and will learn how Rust's type system helps create properly designed large software projects.
 
-#### 5 - Crawling the web for OSINT (October 2021 🕒)
+#### 5 - Crawling the web for OSINT (partially available, will be updated during the beta ✅🕒)
 Leveraging all we learned previously, we will build an extremely fast web crawler to help us find the needles in the haystack the web is.
 
 
@@ -162,13 +162,13 @@ A European VAT number is optional, and you can skip the field or leave it empty 
 
 
 
-## Getting started
+<!-- ## Getting started
 
 **Knowledge has no value if you don't practice!**
 
 Where to start? I've got you covered! I've extracted the security scanner we build in the book from chapters 2, 3, 4, and 7 into [phaser](https://github.com/skerkour/phaser): an automated attack surface mapper and vulnerability scanner.
 
-You can then contribute to your first Rust security project or participate in your first bug bounty program.
+You can then contribute to your first Rust security project or participate in your first bug bounty program. -->
 
 
 ## Community
