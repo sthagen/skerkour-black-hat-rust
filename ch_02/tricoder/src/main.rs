@@ -25,13 +25,13 @@ fn main() -> Result<(), anyhow::Error> {
         .timeout(http_timeout)
         .build()?;
 
-    // we use a custom trheadpool to improve speed
+    // we use a custom threadpool to improve speed
     let pool = rayon::ThreadPoolBuilder::new()
         .num_threads(256)
         .build()
         .unwrap();
 
-    // pool.install is required to use our custom threadpool, instad of rayon's default one
+    // pool.install is required to use our custom threadpool, instead of rayon's default one
     pool.install(|| {
         let scan_result: Vec<Subdomain> = subdomains::enumerate(&http_client, target)
             .unwrap()

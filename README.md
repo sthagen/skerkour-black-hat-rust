@@ -1,9 +1,9 @@
 <p align="center">
-  <a href="https://academy.kerkour.com/black-hat-rust?coupon=GITHUB" target="_blank" rel="noopener"><img alt="Black Hat Rust logo" src="./black_hat_rust_cover.png" height="300" /></a>
-  <h1 align="center">Black Hat Rust - Early Access</h1>
+  <a href="https://kerkour.com/black-hat-rust" target="_blank" rel="noopener"><img alt="Black Hat Rust logo" src="./black_hat_rust_cover.png" height="300" /></a>
+  <h1 align="center">Black Hat Rust</h1>
   <h3 align="center">Applied offensive security with the Rust programming language</h3>
   <h3 align="center">
-    <a href="https://academy.kerkour.com/black-hat-rust?coupon=GITHUB">Buy the book now!</a>
+    <a href="https://kerkour.com/black-hat-rust">Buy the book now!</a>
   </h3>
 </p>
 
@@ -53,62 +53,41 @@ But I repeat, this book is NOT a computer science book.
 
 
 <h3>
-  <a href="https://academy.kerkour.com/black-hat-rust?coupon=GITHUB">Buy the book now!</a>
-</h3>
-
-## Early access
-
-As of today, the book is a work in progress. It is available in the context of an Early Access program which means that the chapters will be sent to you as soon as they are written, and feedback is very much appreciated.
-
-pages available: **320+**
-
-code progress: **~90%**
-
-estimated final publication: **October 2021**
-
-estimated number of pages: **~330+**
-
-
-**In order to thank all the people who will help me make this book a reality, all early access buyers will also receive the following bonus:**
-* **A curated list of advanced malware analyses. You will find inside great inspiration when developing your own offensive tools.**
-
-
-<h3>
-  <a href="https://academy.kerkour.com/black-hat-rust?coupon=GITHUB">Buy the book now!</a>
+  <a href="https://kerkour.com/black-hat-rust">Buy the book now!</a>
 </h3>
 
 
 ## Table of contents
 
-#### 1 - Introduction <span title="available">✅</span>
+#### 1 - Introduction
 
 ### Part I: Reconnaissance
 
-#### 2 - Multi-threaded attack surface discovery (partially available, will be updated during the beta ✅🕒)
+#### 2 - Multi-threaded attack surface discovery
 How to perform effective reconnaissance? In this chapter, we will build a multi-threaded scanner in order to automate the mapping of the target.
 
-#### 3 - Going full speed with async (partially available, will be updated during the beta ✅🕒)
+#### 3 - Going full speed with async
 Unfortunately, when a program spends most of its time in I/O operations, multi-threading is not a panacea. We will learn how async makes Rust code really, really fast and refactor our scanner to async code.
 
-#### 4 - Adding modules with Trait objects (partially available, will be updated during the beta ✅🕒)
+#### 4 - Adding modules with Trait objects
 We will add more heterogeneous modules to our scanner and will learn how Rust's type system helps create properly designed large software projects.
 
-#### 5 - Crawling the web for OSINT (partially available, will be updated during the beta ✅🕒)
+#### 5 - Crawling the web for OSINT
 Leveraging all we learned previously, we will build an extremely fast web crawler to help us find the needles in the haystack the web is.
 
 
 ### Part II: Exploitation
 
-#### 6 - Finding vulnerabilities (partially available, will be updated during the beta ✅🕒)
+#### 6 - Finding vulnerabilities
 Once the external reconnaissance performed, it's time to find entry points. In this chapter we will learn how automated fuzzing can help us to find vulnerabilities that can be exploited to then gain access to our target's systems.
 
-#### 7 - Exploit development (October 2021 🕒)
+#### 7 - Exploit development
 Rust may not be as fast as python when it comes to iterating on quick scripts such as exploits, but as we will see, its powerful type and modules system make it nonetheless a weapon of choice.
 
-#### 8 - Writing shellcodes in Rust (partially available, will be updated during the beta ✅🕒)
+#### 8 - Writing shellcodes in Rust
 Shellcode development is an ungrateful task. Writing assembly by hand is definitely not sexy. Fortunately for us, Rust, one more time, got our back! In this chapter we will learn how to write shellcodes in plain Rust with no_std.
 
-#### 9 - Phishing with WebAssembly (partially available, will be updated during the beta ✅🕒)
+#### 9 - Phishing with WebAssembly
 When they can't find exploitable hardware or software vulnerability, attackers usually fall back to what is often the weakest link in the chain: Humans.
 Again, Rust comes handy and will let us create advanced phishing pages by compiling to WebAssembly.
 
@@ -116,36 +95,32 @@ Again, Rust comes handy and will let us create advanced phishing pages by compil
 
 ### Part III: Implant development
 
-#### 10 - A modern RAT (partially available, will be updated during the beta ✅🕒)
+#### 10 - A modern RAT
 A RAT (for Remote Access Tool), also known as implant or beacon, is a kind of software used to perform offensive operations on a target's machines. In this chapter we will build our own RAT communicating to a remote server and database.
 
-#### 11 - Securing communications with end-to-end encryption (partially available, will be updated during the beta ✅🕒)
+#### 11 - Securing communications with end-to-end encryption
 The consequences of our own infrastructure being compromised or seized can be disastrous. We will add end-to-end encryption to our RAT's communication in order to secure its communications and avoid leaving traces on our servers.
 
-#### 12 - Going multi-platforms (partially available, will be updated during the beta ✅🕒)
+#### 12 - Going multi-platforms
 Today's computing landscape is extremely fragmented. From Windows to macOS, we can't target only one Operating System to ensure the success of our operations. In this section we will see how Rust's ecosystem is extremely useful when it comes to cross-compilation.
 
-#### 13 - Turning into a worm to increase reach (October 2021 🕒)
+#### 13 - Turning into a worm to increase reach
 Once the initial targets compromised, we will capitalize on Rust's excellent reusability to incorporate some parts of our initial scanner to turn our RAT into a worm and reach more targets only accessible from the target's internal network.
 
-#### 14 Conclusion (partially available, will be updated during the beta ✅🕒)
+#### 14 Conclusion
 Now it's **your** turn to get things done!
 
 <h3>
-  <a href="https://academy.kerkour.com/black-hat-rust?coupon=GITHUB">Buy the book now!</a>
+  <a href="https://kerkour.com/black-hat-rust">Buy the book now!</a>
 </h3>
 
 
 ## FAQ
 
-### Are there other means of payment available?
 
-Payments by cards are secured by [Stripe](https://stripe.com).
+### Can I pay with PayPal, Apple Pay or Google Pay?
 
-Also, I need a unified list of purchases on [Stripe](https://stripe.com) for accounting reasons, at least during the early-access phase.
-
-Please join the discussion on [GitHub (Alternative means of payment (Bitcoin, PayPal...))](https://github.com/skerkour/black-hat-rust/issues/10) if payment by card is absolutely not an option for you, I will do my best to add more means of payments once the book is completed.
-
+Yes! You can now buy Black Hat Rust with PayPal, Apple Pay or Google Pay. [Go Here to proceed](https://kerkour.com/black-hat-rust).
 
 <!-- ### The book is too expensive!
 
@@ -174,8 +149,6 @@ You can then contribute to your first Rust security project or participate in yo
 ## Community
 
 Hey! Welcome you to the Black Hat Rustaceans gang! If you think something in the book or the code can be improved, please [open an issue](https://github.com/skerkour/black-hat-rust/issues). Pull requests are also welcome :)
-
-If you have any questions or ideas, feel free to [join the discussion on the Forum](https://github.com/skerkour/black-hat-rust/discussions)!
 
 
 ## Newsletter

@@ -2,12 +2,320 @@
 
 All notable changes to the book will be documented in this file.
 
+## v2022.54 - 2022-03-25
 
-## v2021.19 - Work In Progress
+* ch06: typo
+
+## v2022.53 - 2022-03-15
+
+* ch03: typo
+
+## v2022.52 - 2022-03-07
+
+* ch08: typo
+
+## v2022.51 - 2022-03-04
+
+### Changed
+
+* ch10: Add "Dockerizing the server" section
+* ch02: typos
+* ch03: typos
+* ch09: typos
+* ch10: typos
+
+
+## v2022.50 - 2022-02-07
+
+### Changed
+
+* ch02: Use a single call to `to_socket_addrs`
+* ch03: Use a single call to `to_socket_addrs`
+
+
+## v2022.49 - 2022-01-25
+
+### Changed
+
+* ch10: Fix "Scaling the architecture" schema
+
+
+## v2022.48 - 2022-01-22
+
+### Changed
+
+* ch02: typos
+
+
+
+## v2021.47 - 2022-01-07
+
+### Changed
+
+* ch03: typos
+
+
+## v2021.46 - 2021-12-21
+
+
+### Changed
+
+- All chapters: fixed overflowing code sections for default language
+
+
+## v2021.45 - 2021-12-16
+
+
+### Changed
+
+- fixed sections numbers
+
+
+## v2021.44 - 2021-12-16
+
+
+### Changed
+
+- ch04: fixed ETCD snippet
+- ch07: fixed lists layout issues
+- all chapters: fixed bash code highlighting overflowing
+- all chapters: fix lists layout issues
+
+
+## v2021.43 - 2021-12-11
+
+
+### Changed
+
+- Lot of typos
+
+
+## v2021.42 - 2021-12-09
+
+
+### Changed
+
+- Fix bullet lists layout issues
+
+
+## v2021.41 - 2021-12-07
+
+
+### Changed
+
+- PDF: Fix layout issues
+
+
+
+## v2021.40 - 2021-12-01
+
+
+### Changed
+
+- all chapters: Fix layout
+
+
+
+## v2021.39 - 2021-11-30
+
+
+### Changed
+
+- all chapters: typos and wording
+
+
+
+## v2021.38 - 2021-11-23
+
+
+### Changed
+
+- all chapters: typos
+
+
+
+
+## v2021.37 - 2021-11-14
+
+
+### Changed
+
+- ch09: Editing + typos
+- ch09: Illustrations improved
+
+
+
+
+## v2021.36 - 2021-11-13
+
+
+### Changed
+
+- ch07: Editing + typos
+
+
+
+
+## v2021.35 - 2021-11-13
+
+
+### Changed
+
+- ch05: Editing + typos
+- ch05: Illustrations improved
+
+
+
+## v2021.34 - 2021-11-12
+
+
+### Changed
+
+- ch06: Editing + typos
+- ch06: Illustrations improved
+
+
+
+## v2021.33 - 2021-11-11
+
+
+### Changed
+
+- ch12: Editing + typos
+- ch12: Illustrations improved
+
+
+
+
+
+## v2021.32 - 2021-11-11
+
+
+### Changed
+
+- ch04: Editing + typos
+- ch04: Illustrations improved
+
+
+
+
+## v2021.31 - 2021-11-10
+
+
+### Changed
+
+- ch10: Editing + typos
+- ch10: Illustrations improved
+
+
+
+
+## v2021.30 - 2021-11-10
+
+
+### Changed
+
+- ch08: Editing + typos
+- ch08: Illustrations improved
+
+
+## v2021.29 - 2021-11-09
+
+
+### Changed
+
+- ch14: Editing + typos
+- ch14: Illustrations improved
+
+
+
+
+## v2021.28 - 2021-11-08
+
+
+### Changed
+
+- ch13: Editing + typos
+- ch13: Illustrations improved
+
+
+
+
+## v2021.27 - 2021-11-07
+
+
+### Changed
+
+- ch11: Editing + typos
+- ch11: Illustrations improved
+
+
+
+## v2021.26 - 2021-11-07
+
+
+### Changed
+
+- ch03: Editing + typos
+- ch03: Illustrations improved
+
+
+
+## v2021.25 - 2021-11-02
+
+
+### Changed
+
+- ch02: Editing + typos
+- ch02: Illustrations improved
+
+
+
+## v2021.24 - 2021-10-30
+
+
+### Changed
+
+- ch01: Editing + typos
+- ch01: Illustrations improved
+
+
+## v2021.23 - 2021-10-28
+
+### Changed
+
+- ch01 illustrations
+
+
+### Changed
+
+- ch14: content
+
+
+### Fixed
+
+- ch14: Fixed "Your turn" image
+
+
+## v2021.22 - 2021-10-28
+
+### Fixed
+
+- hyperlinks in Table of contents are now working
+
+
+## v2021.19 - 2021-10-27
 
 ### Added
 
 * ch12
+* ch13
+
+### Changed
+
+* all chapters: typos
+* all chapters: all illustrations revamped
+
 
 ## v2021.18 - 2021-10-07
 
